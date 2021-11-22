@@ -3,4 +3,5 @@
 It's all about simple JavaScript, PHP, HTML5 , CSS, AJAX...
 
 
-![Tên link](https://google.com)
+
+![Tên link với chú thích](đường dẫn "chú thích") (&lt;a name="chú thích"&gt;)
