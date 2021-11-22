@@ -1,1 +1,0 @@
-JavaScript Simple Character Converter 
