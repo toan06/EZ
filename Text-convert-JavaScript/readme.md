@@ -1,3 +1,3 @@
 JavaScript Simple Character Converter 
 
-***[Demo](https://raw.githack.com/toan06/EZ/main/Text-convert-JavaScript/textConvert.htmltextConvert.html)***
+###*[Demo](https://raw.githack.com/toan06/EZ/main/Text-convert-JavaScript/textConvert.htmltextConvert.html)*###
