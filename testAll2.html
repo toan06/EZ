@@ -1,0 +1,97 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta chaset="UTF-8">
+<head>
+<h2>simple code used to convert string or characters</h2> 
+<div class="div-form">
+<input id="frm" class="form"  placeholder="_" > ==>
+<input id="to" class="form" placeholder="_">
+	</div>
+	
+<button class="clear" id="clear" onclick="remove()" style="display: none">clear</button>
+<button class="convert" id="convert" onclick="convert()">convert</button>
+<button  id="copy"  class="copy" style="display: none" onclick="copy()">copy</button>
+
+
+<div class="div">
+<textarea id="input"  class="color" rows="15" cols="40" placeholder="_" style="background: #009BBD"></textarea>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&#8595;&#8595;</h1>
+<textarea id="source" class="color" rows="15" cols="40" placeholder="_"  style="background: #009BBD" disabled></textarea>
+
+</div>
+<style>
+	body {background: #98AFC7}
+	.div {
+		margin:16px;
+		margin-top:50px;
+	}
+	.form {
+		border-radius: 5px;
+		width:40px;
+		height:20px;
+		position: relative;
+		top:0px;
+	}
+	.convert{
+		position: absolute;
+		border-radius: 10px;
+		margin-left:71%;
+		width:70px;
+		height:35px;
+		top:150px;
+	}
+	.copy{
+		border-radius: 5px;
+		width:70px;
+		height:25px;
+		position: absolute;
+		margin:15px;
+		top:150px;
+	}
+	.clear{
+		border-radius: 5px;
+		width:70px;
+		height:25px;
+		position: absolute;
+		margin:15px;
+		left:90px;
+		top:150px;
+	}
+	.color{
+		color: #011;
+	}
+	.div-form{
+		padding:20px 20px 15px 15px;
+		position: relative;
+		top:0px;
+	}
+</style>
+<script>
+	var $ = document.querySelector.bind(document);
+	function convert(){
+		var str = $("#input").value;
+		var v = $("#frm").value;
+		var to = $("#to").value;
+		var str2 = str.replaceAll(v, to);
+		$("#source").value=str2;
+		$("#source").disabled= false;
+		$("#copy").innerText="copy";
+		$("#copy").style.display="block";
+		$("#clear").style.display="block";
+	};
+	function remove(){
+		$("#input").value = null;
+		$("#source").value=null;
+		$("#frm").value=null
+		$("#to").value=null
+		$("#source").disabled= true;
+		$("#copy").style.display="none";
+		$("#clear").style.display="none";
+		
+	};
+	function copy() {
+	  var txt = $("#source").value;
+	  $("#copy").innerText="copied";
+	  navigator.clipboard.writeText(txt);
+	};
+</script>
