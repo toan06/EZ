@@ -2,4 +2,4 @@
 
 ## use ##
 ### turn on desktop mode and add this code on Chrome URL ###
->JavaScript:const i = document.createElement('script'); i.src = "https://toan06/EZ/Omegle/code_omegle_v1.js"; document.getElementsByTagName('head')[0].appendChild(i);
+>JavaScript:const i = document.createElement('script'); i.src = "https://raw.githack.com/toan06/EZ/main/Omegle/code_omegle_v1.js"; document.getElementsByTagName('head')[0].appendChild(i);
