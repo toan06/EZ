@@ -1,5 +1,5 @@
 const popup_get_text = prompt("   text ","any text");
-const popup_get_time = prompt("   time 1 = 1s, 0.5 = 0,5s... ","0.5);
+const popup_get_time = prompt("   time 1 = 1s, 0.5 = 0,5s... ","0.5");
 function spam_Omegle(){
 	const $ = document.querySelector.bind(document);
 	const newBtn = $(".disconnectbtn");
