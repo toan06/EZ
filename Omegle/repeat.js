@@ -1,5 +1,5 @@
 /*toàn*/
-var first_message=prompt (" some text"," hello")
+var first_message=prompt (" some text"," hello");
 setInterval(function(){
 	const $ = document.querySelector.bind(document);
 	const $$ = document.querySelectorAll.bind(document);
