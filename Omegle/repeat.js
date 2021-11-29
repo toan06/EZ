@@ -1,3 +1,5 @@
+/*toàn*/
+var first_message=prompt (" some text"," hello")
 setInterval(function(){
 	const $ = document.querySelector.bind(document);
 	const $$ = document.querySelectorAll.bind(document);
@@ -9,7 +11,7 @@ setInterval(function(){
 	chatBox.disabled = true;
 	
 	if(i==0){
-		chatBox.value="hi";
+		chatBox.value=first_message;
 	    sendBtn.click();
 	}else if(newBtn.innerText.slice(0,3)=="New"){
 		newBtn.click();
@@ -48,4 +50,3 @@ setInterval(function(){
 	  '; expires=' + now.toUTCString() +
 	  '; path=/';
 })(); 
-/*toàn*/
