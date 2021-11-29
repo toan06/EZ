@@ -16,11 +16,11 @@ setInterval(function(){
 	}else if(newBtn.innerText.slice(0,3)=="New"){
 		newBtn.click();
 	};
-
+	
 	setTimeout(function(){
-                 newBtn.click();
-        },100000);
-
+		newBtn.click();
+	},100000);
+	
 	var source = $$(".msgsource")[i-1].innerText;﻿ 
 	var len = $$("span").length;
 	var txt = $$("span")[i+5].innerText;
