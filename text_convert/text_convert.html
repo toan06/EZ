@@ -12,12 +12,10 @@
 <button class="convert" id="convert" onclick="convert()">convert</button>
 <button  id="copy"  class="copy" style="display: none" onclick="copy()">copy</button>
 
-
 <div class="div">
 <textarea id="input"  class="color" rows="15" cols="40" placeholder="_" style="background: #009BBD"></textarea>
 <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&#8595;&#8595;</h1>
 <textarea id="source" class="color" rows="15" cols="40" placeholder="_"  style="background: #009BBD" disabled></textarea>
-
 </div>
 <style>
 	body {background: #98AFC7}
@@ -87,7 +85,6 @@
 		$("#source").disabled= true;
 		$("#copy").style.display="none";
 		$("#clear").style.display="none";
-		
 	};
 	function copy() {
 	  var txt = $("#source").value;
