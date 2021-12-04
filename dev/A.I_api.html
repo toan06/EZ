@@ -4,7 +4,7 @@
 </head>
 <div class="popup">test ok  <a href="https://api.monkedev.com" class="popup_a">visit website?</a></div>
 <p style="position: absolute;" id="p"></p>
-<textarea cols='35' class="inp" rows='3' style="margin-top: 450px;" class="inp"></textarea>
+<textarea cols='35' class="inp" rows='3' style="margin-top: 460px;" class="inp"></textarea>
 <button class="btn" onclick="btn_click()">send</button>
 <style>
 	body{
@@ -55,7 +55,7 @@ function btn_click(){
 	};
 	var inp = $(".inp").value;
 	var div= document.createElement("div");
-	div.style.textShadow=" 0 0 10px #81FF00, 0 0 20px #81FF00,0 0 30px #81FF00 ";
+	div.style.textShadow=" 0 0 10px #81FF00, 0 0 20px #81FF00 ";
 	div.style.color="#81FF00";
 	div.innerText =inp;
 	document.getElementsByTagName("p")[0].appendChild(div);
