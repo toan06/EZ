@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+        <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta chaset="UTF-8">
+</head>
+<div class="popup">test ok  <a href="https://api.monkedev.com" class="popup_a">visit website?</a></div>
+<p style="position: absolute;" id="p"></p>
+<textarea cols='35' class="inp" rows='3' style="margin-top: 480px;" class="inp"></textarea>
+<button class="btn" onclick="btn_click()">send</button>
+<style>
+	body{
+		background: #030303;
+	}
+	.btn {
+		position: relative;
+		height: 50px;
+		width: 52px;
+		top: -22px;
+		border-radius: 10px;
+		background: #001D0F;
+		outline: none;
+		color: #81FF00;
+		border: 1px solid #81FF00;
+	}
+	.inp {
+		outline: none;
+		background: #001D0F;
+		border-radius: 10px;
+		color: #81FF00;
+		border: 1px solid #81FF00;
+	}
+	.popup{
+		font-size: 35px;
+		position: absolute;
+		padding: 50px;
+		margin:  20px 50px 50px 35px;
+		background:#DBDBDB;
+		display: none;
+		z-index: 100;
+	}
+	.popup_a{
+		text-decoration: none;
+	}
+</style>
+<script>
+var $ = document.querySelector.bind(document);
+var $$ = document.querySelectorAll.bind(document);
+function btn_click(){
+	var len = document.getElementsByTagName("div").length;
+	if(len==6){
+		$(".inp").disabled=true;
+		$(".inp").value=null;
+		$(".btn").disabled=true;
+		$(".popup").style.display="block";
+	};
+	var inp = $(".inp").value;
+	if(inp==undefined || inp==""){
+		alert("hi");
+	}else{
+		var div= document.createElement("div");
+		div.style.color="#81FF00";
+		div.innerText =inp;
+		document.getElementsByTagName("p")[0].appendChild(div);
+		var encode_inp = encodeURIComponent(inp);
+		var req = new XMLHttpRequest();
+		req.open("GET", "https://api.monkedev.com/fun/chat?msg="+encode_inp, false);
+	    req.send();
+	    var data = JSON.parse(req.responseText); 
+	    div.innerText=data.response+"\n\n";
+	    $(".inp").value=null;
+	};
+};
+</script>
