@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+        <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta chaset="UTF-8">
+</head>
+	<div class="popup">test ok  <a href="https://api.monkedev.com" class="popup_a">visit website?</a></div>
+	<div id="msg"></div>
+	<p style="position: absolute;" id="p"></p>
+	<textarea cols='35' class="inp" rows='3' class="inp"></textarea>
+	<button class="btn" onclick="btn_click()">send</button>
+<style>
+	body{
+		background: #030303;
+	}
+	.btn {
+		position: relative;
+		height: 50px;
+		width: 52px;
+		top: -22px;
+		border-radius: 10px;
+		background: #001D0F;
+		outline: none;
+		color: #81FF00;
+		border: 1px solid #81FF00;
+	}
+	.inp {
+		outline: none;
+		margin: 4px 0px 0px 0px;
+		background: #001D0F;
+		border-radius: 10px;
+		color: #81FF00;
+		border: 1px solid #81FF00;
+	}
+	.popup{
+		font-size: 35px;
+		position: absolute;
+		padding: 50px;
+		margin:  20px 50px 50px 35px;
+		background:#DBDBDB;
+		display: none;
+		z-index: 100;
+	}
+	.popup_a{
+		text-decoration: none;
+	}
+	#msg{
+		position: relative;
+		  overflow-y: scroll;
+  		height:85%;
+  		padding:0 12px;
+  		scroll-behavior:smooth;
+	}
+	.left, .right{
+		font-size:18px;
+		display:inline-block;
+		padding:5px;
+		width:auto;
+		max-width: 88%;
+		margin: 8px -10px 8px -10px  ;
+  	  font-family:monospace;
+  	  word-wrap:break-word;
+ 	   border-radius: 20px;
+	}
+	.left{
+		color:#fff;
+		background: #303030;
+	}
+	.right{
+		float:right;
+		color:#fff;
+	    background: #1A46C0;
+	}
+	.msgCon1, .msgCon2{
+		width: 100%;
+		display:inline-block;
+	}
+</style>
+<script>
+var $ = document.querySelector.bind(document);
+var auto = $(".inp");
+auto.addEventListener("keydown", function(){
+		var objDiv = document.getElementById("msg");
+		objDiv.scrollTop = objDiv.scrollHeight;
+	});
+function btn_click(){
+	var open_popup = document.getElementsByClassName("left").length;
+	if(open_popup >= 15){
+		$(".btn").disabled= true;
+		$(".inp").disabled= true;
+		$(".popup").style.display="block";
+    };
+	var val = $(".inp").value;
+	if(val==undefined || val==""){
+	}else{
+		var req = encodeURIComponent(val)
+		var reque = new XMLHttpRequest();
+		reque.open("GET", "https://api.monkedev.com/fun/chat?msg="+req, false);
+	    reque.send();
+	    var data = JSON.parse(reque.responseText) ; 
+	    var res = data.response;
+	
+		let data_req = document.createElement('div');
+		let data_res = document.createElement('div');
+	
+		let container1 = document.createElement('div');
+		let container2 = document.createElement('div');
+	
+		container1.setAttribute("class","msgCon1");
+		container2.setAttribute("class","msgCon2");
+	
+		data_req.innerHTML = val ;
+		data_res.innerHTML = res ;
+	
+	
+		data_req.setAttribute("class","right");
+		data_res.setAttribute("class","left");
+	
+		let message = $('#msg');
+	
+		
+		message.appendChild(container1);
+		message.appendChild(container2);
+	
+		container1.appendChild(data_req);
+		container2.appendChild(data_res);
+	
+		$('.inp').value = "";
+		(function (){
+			var scrollMsg = $('#msg')
+			scrollMsg.scrollTop = scrollMsg.scrollHeight ;
+		})();
+	};
+};
+</script>
