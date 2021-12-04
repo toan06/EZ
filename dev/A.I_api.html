@@ -54,16 +54,19 @@ function btn_click(){
 		$(".popup").style.display="block";
 	};
 	var inp = $(".inp").value;
-	var div= document.createElement("div");
-	div.style.color="#81FF00";
-	div.innerText =inp;
-	document.getElementsByTagName("p")[0].appendChild(div);
-	var encode_inp = encodeURIComponent(inp);
-	var req = new XMLHttpRequest();
-	req.open("GET", "https://api.monkedev.com/fun/chat?msg="+encode_inp, false);
-    req.send();
-    var data = JSON.parse(req.responseText); 
-    div.innerText=data.response+"\n\n";
-    $(".inp").value=null;
-}; 
+	if(inp==undefined || inp==""){
+	}else{
+		var div= document.createElement("div");
+		div.style.color="#81FF00";
+		div.innerText =inp;
+		document.getElementsByTagName("p")[0].appendChild(div);
+		var encode_inp = encodeURIComponent(inp);
+		var req = new XMLHttpRequest();
+		req.open("GET", "https://api.monkedev.com/fun/chat?msg="+encode_inp, false);
+	    req.send();
+	    var data = JSON.parse(req.responseText); 
+	    div.innerText=data.response+"\n\n";
+	    $(".inp").value=null;
+	};
+}
 </script>
