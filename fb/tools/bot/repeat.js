@@ -1,3 +1,4 @@
+alert("code started");
 (function(){
 	var $=document.getElementsByClassName.bind(document);
 	function chat(){
