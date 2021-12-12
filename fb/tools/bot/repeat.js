@@ -1,5 +1,5 @@
-alert("code started");
 (function(){
+        alert("code started");
 	var $=document.getElementsByClassName.bind(document);
 	function chat(){
 		var len = $("_34ej").length;  
