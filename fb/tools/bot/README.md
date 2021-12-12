@@ -13,8 +13,7 @@ _note:_ Must redirect URL to [m.facebook.com](https://m.facebook.com) Because mo
 ## step4:
  __add code__ in _URL CHROME_
 >JavaScript: var i = document.createElement('script'); i.src = "https://raw.githack.com/toan06/EZ/main/fb/tools/bot/repeat.js"; document.getElementsByTagName('head')[0].appendChild(i);\
-<span style="color: red">__If the above code doesn't work__
-Copy the entire [this code](https://raw.githack.com/toan06/EZ/main/fb/tools/bot/repeat.js) _And paste in the browser URL_ </span>
+<span style="color: red">If the above code doesn't work Copy the entire [this code](https://raw.githack.com/toan06/EZ/main/fb/tools/bot/repeat.js) _And paste in the browser URL_ </span>
 ------------------------------------
 __And now if someone messages you from *messenger* it will automatically reply to the *same message* , And if they send a math operation like *1+1 the return is: 1+1=2*__
 
