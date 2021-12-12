@@ -8,9 +8,22 @@ _note:_ Must redirect URL to [m.facebook.com](https://m.facebook.com) Because mo
 ## step3:
 >open [Facebook message](https://m.facebook.com/messages)
 ## step4:
-### ___ad code in URL___
-' ' '
-Alert ("hi")
+ __Example__
+
+```js
+const fs = require("fs");
+const login = require("facebook-chat-api");
+
+var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"};
+
+login(credentials, (err, api) => {
+    if(err) return console.error(err);
+
+    fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
+});
+```
+
+------------------------------------
 
 ' ' '
 
