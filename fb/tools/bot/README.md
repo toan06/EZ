@@ -21,4 +21,5 @@ __And now if someone messages you from *messenger* it will automatically reply t
 _note:_ because this is the code that runs in the _client browser So you need to open the browser constantly_
 
 _And since this is code that runs in your browser, ~so no data will be stolen~_
-<p style="color:red">hi</p>
+------------------------------------
+<span style="color: red">some blue text</span>.
