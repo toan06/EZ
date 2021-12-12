@@ -1,4 +1,4 @@
-# simple repeat chatbot _no token no hard setup_
+# Simple iterative ChatBot for android _no setup, no token only add code_
 ------------------------------------
 ## step1:
 >First you need to login to [Facebook](https://m.facebook.com) on your browser 
