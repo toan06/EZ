@@ -17,5 +17,5 @@ _note:_ Must redirect URL to [m.facebook.com](https://m.facebook.com) Because mo
 And now if someone messages you from *messenger* it will automatically reply to the *same message* , And if they send a math operation like *1+1 the return is: 1+1=2*
 ------------------------------------
 _note:_ because this is the code that runs in the _client browser So you need to open the browser constantly_
-------------------------------------
-_And since this is code that runs on your browser, -no data will be stolen-_
+
+_And since this is code that runs in your browser, ~so no data will be stolen~_
