@@ -5,10 +5,11 @@
 ------------------------------------
 ## step2:
 >Next please turn on *_Desktop mode_* 
+
 _note:_ Must redirect URL to [m.facebook.com](https://m.facebook.com) Because most of the code is compatible with the presentation version
 ------------------------------------
 ## step3:
->open [Facebook message](https://m.facebook.com/messages)
+>open [Facebook message](https://m.facebook.com/messages) __and destop mode__
 ------------------------------------
 ## step4:
  __add code__ in _URL CHROME_
