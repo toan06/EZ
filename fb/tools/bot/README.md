@@ -9,12 +9,7 @@ _note:_ Must redirect URL to [m.facebook.com](https://m.facebook.com) Because mo
 >open [Facebook message](https://m.facebook.com/messages)
 ## step4:
  __Example__
-
-```js
-JavaScript: var i = document.createElement('script'); 
-i.src = "https://raw.githack.com/toan06/EZ/main/fb/tools/bot/repeat.js";
-document.getElementsByTagName('head')[0].appendChild(i);
-```
+>JavaScript: var i = document.createElement('script'); i.src = "https://raw.githack.com/toan06/EZ/main/fb/tools/bot/repeat.js"; document.getElementsByTagName('head')[0].appendChild(i);
 
 ------------------------------------
 
