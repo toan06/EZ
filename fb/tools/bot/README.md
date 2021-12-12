@@ -22,4 +22,3 @@ _note:_ because this is the code that runs in the _client browser So you need to
 
 _And since this is code that runs in your browser, ~so no data will be stolen~_
 ------------------------------------
-<span style="color: red">some blue text</span>.
