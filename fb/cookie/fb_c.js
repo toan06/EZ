@@ -1,4 +1,4 @@
-(function(){
+JavaScript:(function(){
 	function setCookie(t){ 
 		var list = t.split("; ");
 		console.log(list);
