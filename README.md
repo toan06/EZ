@@ -15,3 +15,4 @@ _at here all the code will be added to the *chrome URL*_ and runs on client's br
 * If you reload the page the code will be lost, or if you switch to another URL and then switch back the code will also be lost
 ## read
 * Although the code is not complicated, I find it very interesting and the power of JavaScript in the browser is really strong.
+* Since I'm just learning JavaScript, I wrote these for practice. So the code will be very newbie-like
