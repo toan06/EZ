@@ -7,3 +7,6 @@ _at here all the code will be added to the *chrome URL*_ and runs on client's br
 * No data will be stolen
 * Most of the code is used by adding to the website to use
 * And all run on _destop mode_ 
+__Usage is also very simple_
+*_ JavaScript ES6 _*
+* paste directly in the _URL_ or _Console_
