@@ -4,5 +4,5 @@
 __Since Facebook doesn't allow pasting code from a URL other than their own, you have to copy the entire paste in to run it__
 
 ### ex: URL is: https://m.facebook.com <= remove it and add:
-__I will example code at [/tools/bot/](https://raw.githack.com/toan06/EZ/main/fb/tools/bot)__
-> JavaScript: [copy all and paste](https://raw.githack.com/toan06/EZ/main/fb/tools/bot)
+__I will example code at [/tools/bot/](https://raw.githack.com/toan06/EZ/main/fb/tools/bot/repeat.js)__
+> JavaScript: [copy all and paste](https://raw.githack.com/toan06/EZ/main/fb/tools/bot/repeat.js)
