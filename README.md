@@ -16,3 +16,4 @@ _at here all the code will be added to the *chrome URL*_ and runs on client's br
 ## read
 * Although the code is not complicated, I find it very interesting and the power of JavaScript in the browser is really strong.
 * Since I'm just learning JavaScript, I wrote these for practice. So the code will be very newbie-like
+* And partly because I write code on android, so this code is mostly used for android
