@@ -11,7 +11,9 @@ _at here all the code will be added to the *chrome URL*_ and runs on client's br
 *_JavaScript ES6_*
 * You need to go to the page where you want to run the code
 * Go to the _URL_ bar delete the old URL and paste the code I put in the code description
-* ex: URL is: ~https://google.com~ <= remove it and add _"JavaScript: alert("run!")"_ *I think only run on Chrome*
+* ex: URL is: ~https://google.com~ <= remove it and add 
+>_JavaScript: alert("run!")_ 
+__*I think only run on Chrome*__
 * If you reload the page the code will be lost, or if you switch to another URL and then switch back the code will also be lost
 ## read
 * Although the code is not complicated, I find it very interesting and the power of JavaScript in the browser is really strong.
