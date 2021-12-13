@@ -2,6 +2,7 @@
 
 ## use ##
 ### turn on _*desktop mode*_ and add this code on Chrome URL _note: Only works on [Omegle](https://www.omegle.com)_
+### ex: URL is: https://www.omegle.com <= remove it and add:
 >JavaScript: var i = document.createElement('script'); i.src = "https://raw.githack.com/toan06/EZ/main/omegle/repeat.js"; document.getElementsByTagName('head')[0].appendChild(i)
 ## notes: 
 * Code won't run if not in _desktop mode_, [You must enable desktop mode in chrome](https://google.com/search?q=how+to+turn+on+desktop+mode+on+chrome)
